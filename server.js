@@ -13,6 +13,9 @@ app.use(cors());
 app.use(express.json());
 
 // Routes
+app.get('/', (req, res)=>{
+    console.log("Yes working bro")
+})
 app.use("/api/auth", authRoutes);
 app.use("/api/trips", tripsRouter);
 
